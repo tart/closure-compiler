@@ -462,6 +462,13 @@ public class DiagnosticGroups {
         ProcessClosurePrimitives.INVALID_PROVIDE_ERROR);
   }
 
+  public static final DiagnosticGroup LISKOV =
+      DiagnosticGroups.registerGroup("liskov",
+          TypeValidator.HIDDEN_PROPERTY_MISMATCH,
+          TypeValidator.HIDDEN_INTERFACE_PROPERTY_MISMATCH,
+          TypeCheck.HIDDEN_SUPERCLASS_PROPERTY_MISMATCH);
+
+
   /**
    * Adds warning levels by name.
    */
